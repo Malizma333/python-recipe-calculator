@@ -1,7 +1,6 @@
 import json, csv
-from constants import csvPath
-
-itemsJsonPath = 'items.json'
+csvPath = './recipes_sf.csv'
+itemsJsonPath = 'csv_generation/items.json'
 
 def readJsonFile(file_path):
     with open(file_path, 'r') as file:
