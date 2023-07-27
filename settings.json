@@ -1,0 +1,27 @@
+{
+  "print_recipe": false,
+  "print_materials": true,
+  "print_machines": true,
+  "print_remaining": true,
+  "recipe_index": {
+    "CARBON": 1
+  },
+  "force_raw_material": [
+    "IRON_DUST",
+    "GOLD_DUST",
+    "COPPER_DUST",
+    "TIN_DUST",
+    "LEAD_DUST",
+    "SILVER_DUST",
+    "ALUMINUM_DUST",
+    "ZINC_DUST",
+    "MAGNESIUM_DUST",
+    "SIFTED_ORE",
+    "BASIC_CIRCUIT_BOARD",
+    "PIXIE_QUEEN_HEART",
+    "VILE_PUMPKIN",
+    "VEX_GEM",
+    "GHOSTLY_ESSENCE",
+    "STRANGE_NETHER_GOO"
+  ]
+}
