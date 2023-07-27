@@ -1,5 +1,7 @@
 import json, csv
-from constants import csvPath, itemsJsonPath
+from constants import csvPath
+
+itemsJsonPath = 'items.json'
 
 def readJsonFile(file_path):
     with open(file_path, 'r') as file:
