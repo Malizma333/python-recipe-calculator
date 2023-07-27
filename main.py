@@ -10,6 +10,8 @@ def main():
     settings = json.load(settings_json)
 
   while(True):
+    system('CLS')
+
     item = input("Enter the id of an item: ").upper()
 
     while(not isValidItem(item)):
@@ -43,7 +45,5 @@ def main():
 
     if(exit.lower() == 'e'):
       break
-
-    system('CLS')
 
 main()
