@@ -1,6 +1,6 @@
 import math, json
 from node_classes import MachineNode, ItemNode
-from retrieve_recipes import getRecipes
+from recipe_utilities import getRecipes
 
 class RecipeTree:
   def __init__(self, quantity, recipe_indices, force_raw):

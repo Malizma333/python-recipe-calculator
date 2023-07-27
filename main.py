@@ -2,7 +2,7 @@ import json
 from os import system
 from recipe_tree import RecipeTree
 from visualizer import printRecipe, printMaterials
-from retrieve_recipes import isValidItem
+from recipe_utilities import isValidItem, getSimilarItems
 from constants import settingsJsonPath
 
 def main():
@@ -16,7 +16,14 @@ def main():
 
     while(not isValidItem(item)):
       print("Invalid item!")
-      item = input("Enter the id of an item: ").upper()
+      similarItems = getSimilarItems(item)
+
+      if(len(similarItems) > 0):
+        print("Did you mean:\n")
+        for similarItem in similarItems:
+          print(' -', similarItem)
+
+      item = input("\nEnter the id of an item: ").upper()
     
     quantity = input("Enter quantity (default 1): ")
     quantityN = 1
